@@ -1,6 +1,7 @@
 ---
 ntp_pkgs:
-  - python-selinux
-  - ntp
+- ntp
 
-ntp_svc_name: ntp
+ntp_service_name: ntp
+ntp_config_driftfile: /var/lib/ntp/ntp.drift
+
