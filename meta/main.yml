@@ -1,7 +1,6 @@
 ---
 galaxy_info:
-  author: "Benno Joy, René Moser"
-  company: AnsibleWorks
+  author: "René Moser"
   license: BSD
   min_ansible_version: 1.4
   platforms:
@@ -20,6 +19,9 @@ galaxy_info:
       - quantal
       - raring
       - saucy
+   - name: Debian
+     versions:
+      - wheezy
   categories:
    - system
 dependencies: []
