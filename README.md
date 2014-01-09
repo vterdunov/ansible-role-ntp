@@ -35,5 +35,5 @@ BSD
 Author Information
 ------------------
 
-Benno Joy
-René Moser
+- Benno Joy
+- René Moser
