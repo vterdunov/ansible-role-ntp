@@ -14,6 +14,10 @@ statistics {{ ntp_config_statistics }}
 filegen {{ filegen }}
 {% endfor %}
 
+{% for listen in ntp_config_listen %}
+interface listen {{ listen }}
+{% endfor %}
+
 {% for restrict in ntp_config_restrict %}
 restrict {{ restrict }}
 {% endfor %}
