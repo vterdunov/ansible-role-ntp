@@ -1,5 +1,5 @@
 ---
-npt_pkg_state: installed
+ntp_pkg_state: installed
 ntp_service_state: started
 ntp_service_enabled: yes
 

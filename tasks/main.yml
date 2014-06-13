@@ -4,20 +4,20 @@
   tags: ["configuration","packages","service","ntp"]
 
 - name: Install the required packages in Redhat derivatives
-  yum: name={{ item }} state={{ npt_pkg_state }}
+  yum: name={{ item }} state={{ ntp_pkg_state }}
   with_items: ntp_pkgs
   when: ansible_os_family == 'RedHat'
   tags: ["packages","ntp"]
 
 - name: Install the required packages in Debian derivatives
-  apt: name={{ item }} state={{ npt_pkg_state }} update_cache=yes
+  apt: name={{ item }} state={{ ntp_pkg_state }} update_cache=yes
   with_items: ntp_pkgs
   when: ansible_os_family == 'Debian'
   tags: ["packages","ntp"]
 
 - name: Copy the ntp.conf template file
   template: src=ntp.conf.j2 dest=/etc/ntp.conf
-  notify: 
+  notify:
   - restart ntp
   tags: ["configuration","packages","ntp"]
 
