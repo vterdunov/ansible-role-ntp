@@ -11,6 +11,7 @@ script:
   - echo localhost > tests/inventory
   - ansible-playbook -i tests/inventory --syntax-check --list-tasks tests/role.yml
   - ansible-playbook -i tests/inventory --connection=local --sudo -v tests/role.yml
+  - ansible-playbook -i tests/inventory --connection=local --sudo --check tests/role.yml
   - >
     ansible-playbook -i tests/inventory --connection=local --sudo tests/role.yml
     | grep -q 'changed=0.*failed=0'
