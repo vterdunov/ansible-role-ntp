@@ -10,8 +10,7 @@ ntp_config_restrict:
 - '127.0.0.1'
 - '::1'
 
-ntp_config_listen:
-- '127.0.0.1'
+ntp_config_listen: []
 
 ntp_config_filegen:
 - 'loopstats file loopstats type day enable'
