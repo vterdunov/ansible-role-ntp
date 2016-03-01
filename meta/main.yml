@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: "Eric Anderson"
-  license: BSD
+  license: GPLv2
   min_ansible_version: 1.4
   platforms:
    - name: EL
@@ -27,6 +27,12 @@ galaxy_info:
    - name: Debian
      versions:
       - wheezy
-  categories:
+  galaxy_tags:
    - system
+   - time
+   - ntp
+   - centos
+   - ubuntu
+   - el
+   - redhat
 dependencies: []
