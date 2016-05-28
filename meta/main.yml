@@ -27,6 +27,11 @@ galaxy_info:
    - name: Debian
      versions:
       - wheezy
+   - name: Suse
+     versions:
+       - 11
+       - 11SP3
+       - 11SP4
   galaxy_tags:
    - system
    - time
