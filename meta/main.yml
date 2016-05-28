@@ -27,7 +27,7 @@ galaxy_info:
    - name: Debian
      versions:
       - wheezy
-   - name: Suse
+   - name: SLES
      versions:
        - 11
        - 11SP3
