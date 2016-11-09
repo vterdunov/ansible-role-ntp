@@ -1,4 +1,6 @@
 ---
+ntp_timezone: America/Los_Angeles
+
 ntp_pkg_state: 'installed'
 ntp_service_state: 'started'
 ntp_service_enabled: 'yes'
