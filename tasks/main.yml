@@ -33,7 +33,10 @@
   tags: [ 'package', 'ntp' ]
 
 - name: Install the required packages in Debian derivatives
-  apt: name=ntp state={{ ntp_pkg_state }}
+  apt:
+    name: ntp
+    state: '{{ ntp_pkg_state }}'
+    update_cache: yes
   when: ansible_os_family == 'Debian'
   tags: [ 'package', 'ntp' ]
 
